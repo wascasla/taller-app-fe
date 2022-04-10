@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import SignIn from "./screens/login/SignIn";
+import Dashboard from "./screens/dashboard/Dashboard";
+import "react-toastify/dist/ReactToastify.min.css";
+import { ClientList } from "./features/clients/clientList";
+import { CarList } from "./features/cars/carList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          
+          <Route path="/" element={<Dashboard />}>
+            <Route path="clients" element={<ClientList />} />
+            <Route path="cars/:idClient" element={<CarList />} />
+          </Route> 
+        </Routes>
+      </BrowserRouter>
+      <ToastContainer theme="colored" hideProgressBar />
+    </>
   );
 }
 
