@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/taller-app-fe/static/css/main.050e14d2.css",
+    "main.js": "/taller-app-fe/static/js/main.fd6f3683.js",
+    "static/js/787.d8eb7404.chunk.js": "/taller-app-fe/static/js/787.d8eb7404.chunk.js",
+    "index.html": "/taller-app-fe/index.html",
+    "main.050e14d2.css.map": "/taller-app-fe/static/css/main.050e14d2.css.map",
+    "main.fd6f3683.js.map": "/taller-app-fe/static/js/main.fd6f3683.js.map",
+    "787.d8eb7404.chunk.js.map": "/taller-app-fe/static/js/787.d8eb7404.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.050e14d2.css",
+    "static/js/main.fd6f3683.js"
+  ]
+}
